@@ -1,0 +1,13 @@
+-library LLVM
+-limitComments
+-mode Directory
+-package org.llvm.binding
+-o $(DIR)/src
+-I$(LLVM_HOME)/include/llvm
+-I$(LLVM_HOME)/include/llvm-c
+-parseChunks
+-v
+
+$(LLVM_HOME)/include/llvm-c/Core.h
+$(LLVM_HOME)/include/llvm-c/Disassembler.h
+$(LLVM_HOME)/include/llvm-c/ExecutionEngine.h
